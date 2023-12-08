@@ -1,6 +1,6 @@
 
 Collection Framework (Interface) ---> Set, List, Queue (Interface) --->
-    List <> ArrayList, Vector, LinkedList (Implementation)
+    List <> ArrayList, Vector, LinkedList, Stack (Implementation)
     Set <> HashSet, LinkedHashSet, TreeSet (Implementation)
 Q   Queue <> PriorityQueue, LinkedList (Implementation)
 
@@ -26,8 +26,17 @@ List (Interface) Methods
     int indexOf(Element e)
     int lastIndexOf(Element e)
 
-List -> ArrayList, Vector, LinkedList (Implementation)
+List -> ArrayList, Vector, LinkedList, Stack (Implementation)
+ArrayList -> Not thread safe, Faster (In 99% cases, we use arraylist)
+Vector -> Same as ArrayList (Vector is thread safe), Slower
+    CopyOnWriteArrayList - thread safe, better than vector
     
 
-    
-    
+Stack (Data Structure)
+    LIFO = Last In First Out 
+
+Stack Functions
+    E push(E item)
+    E pop()
+    E peek()
+    boolean empty()
